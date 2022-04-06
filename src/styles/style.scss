@@ -24,7 +24,6 @@ body {
 
 	font-family: 'PT Sans', sans-serif;
 
-	// font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -56,6 +55,20 @@ h1 {
 	
 		position: absolute;
 	}
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	font-weight: 400;
+
+	text-transform: uppercase;
+
+	margin-bottom: 45px;
+}
+
+p {
+	line-height: 1.5;
 }
 
 // ------------------------
@@ -461,8 +474,6 @@ h1 {
 				}
 	
 				p {
-					line-height: 1.5;
-
 					margin-bottom: 80px;
 				}
 	
@@ -548,6 +559,117 @@ h1 {
 
 			width: 255px;
 			height: 94px;
+		}
+	}
+}
+
+// ------------------------
+
+// Footer
+
+footer {
+
+	.top-footer {
+		padding: 80px 0 100px;
+		margin: 0 -15px;
+
+		background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55)), url('../img/bg-footer.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			
+			padding: 0 6px;
+		}
+
+		&__item {
+			padding: 0 15px;
+		}
+
+		.top-footer__shop {
+			flex: 1 1 0;
+		}
+
+		.top-footer__tags {
+			flex: 1 1 0;
+		}
+
+		.tags {
+			display: flex;
+			flex-wrap: wrap;
+
+			margin: 0 -10px;
+
+			&__item {
+				padding: 13px 21px;
+
+				margin: 0 10px 20px;
+
+				color: $Light-gray;
+				background-color: $LigthBlack;
+
+
+			}
+		}
+
+		.top-footer__mailing {
+			flex: 1 1 0;
+
+			p {
+				margin-bottom: 36px;
+			}
+
+			form {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				background-color: rgba(255, 255, 255, 0.4);
+
+				input {
+					color: $White;
+					background-color: transparent;
+
+					margin: 0 16px;
+				}
+
+				button {
+					font-size: 14px;
+					letter-spacing: 0.7px;
+
+					height: 100%;
+
+					padding: 12px 20px;
+
+					text-transform: uppercase;
+					color: $White;
+					background-color: $LigthBlack;
+				}
+			}
+		}
+
+	}
+
+	.bottom-footer {
+		padding: 18px 0;
+
+		.container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+		}
+
+		font-size: 12px;
+		color: $Light-gray;
+
+		p {}
+
+		a {
+			text-decoration: underline;
+			font-weight: 700;
 		}
 	}
 }
