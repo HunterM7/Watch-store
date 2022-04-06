@@ -71,6 +71,23 @@ p {
 	line-height: 1.5;
 }
 
+a.button {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	padding: 12px 26px;
+
+	border: 1px solid $White;
+
+	transition: .2s ease;
+
+	&:hover {
+		color: $Black;
+		background-color: $White;
+	}
+}
+
 // ------------------------
 
 // Header
@@ -213,12 +230,14 @@ p {
 						text-transform: uppercase;
 
 						padding: 34px 20px;
-					}
-				}
 
-				&__item:hover {
-					color: $White;
-					background-color: #1F1F1F;
+						transition: .2s ease;
+					}
+
+					&:hover {
+						color: $White;
+						background-color: #1F1F1F;
+					}
 				}
 			}
 
@@ -339,16 +358,6 @@ p {
 			text-align: center;
 
 			padding: 93px 60px 46px;
-
-			a {
-				font-size: 18px;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-
-				padding: 12px 26px;
-
-				border: 1px solid $White;
-			}
 		}
 
 		&__item:first-child {
@@ -414,6 +423,8 @@ p {
 			padding: 42px 16px;
 			margin-bottom: 30px;
 
+			height: 325px;
+
 			background-color: #191B1C;
 
 			img {
@@ -437,6 +448,12 @@ p {
 			font-size: 16px;
 			font-weight: 700;
 			color: $Light-gray;
+		}
+
+		&:hover {
+			.watch-box__item__preview {
+				padding: 22px 10px;
+			}
 		}
 	}
 }

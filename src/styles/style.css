@@ -140,6 +140,21 @@ p {
   line-height: 1.5;
 }
 
+a.button {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 26px;
+  border: 1px solid #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+a.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 .header {
   color: #969696;
 }
@@ -312,6 +327,8 @@ p {
   font-size: 14px;
   text-transform: uppercase;
   padding: 34px 20px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 .header .low-header nav .navigation__item:hover {
@@ -419,14 +436,6 @@ p {
   padding: 93px 60px 46px;
 }
 
-.new-collection-box__item a {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 12px 26px;
-  border: 1px solid #fff;
-}
-
 .new-collection-box__item:first-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -512,6 +521,7 @@ p {
           align-items: center;
   padding: 42px 16px;
   margin-bottom: 30px;
+  height: 325px;
   background-color: #191B1C;
 }
 
@@ -533,6 +543,10 @@ p {
   font-size: 16px;
   font-weight: 700;
   color: #D0D0D0;
+}
+
+.watch-box__item:hover .watch-box__item__preview {
+  padding: 22px 10px;
 }
 
 .collection-2018 .container {
