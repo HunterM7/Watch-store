@@ -5,6 +5,7 @@
 // Colors
 
 $Black: #000;
+$LigthBlack: #0f0f0f;
 $White: #fff;
 $Gray: #969696;
 $Light-gray: #D0D0D0;
@@ -39,7 +40,22 @@ h1 {
 	font-weight: 700;
 
 	text-transform: uppercase;
+	text-align: center;
 
+	position: relative;
+
+	&::after {
+		content: "";
+		width: 120px;
+		height: 1px;
+		bottom:-50px;
+		left: 50%;
+		transform: translateX(-50%);
+	
+		background-color: $White;
+	
+		position: absolute;
+	}
 }
 
 // ------------------------
@@ -293,7 +309,7 @@ h1 {
 // ------------------------
 
 
-// Top section
+// New collection
 
 .new-collection {
 
@@ -309,24 +325,7 @@ h1 {
 		&__item {
 			text-align: center;
 
-			padding: 93px 60px;
-
-			h1 {
-				position: relative;
-			}
-
-			h1::after {
-				content: "";
-				width: 120px;
-				height: 1px;
-				bottom:-50px;
-				left: 50%;
-				transform: translateX(-50%);
-
-				background-color: $White;
-
-				position: absolute;
-			}
+			padding: 93px 60px 46px;
 
 			a {
 				font-size: 18px;
@@ -432,7 +431,7 @@ h1 {
 // ------------------------
 
 
-// Top section
+// Collection 2018
 
 .collection-2018 {
 
@@ -454,22 +453,11 @@ h1 {
 				margin: 0 auto;
 
 				h1 {
-					position: relative;
-
 					margin-bottom: 80px;
-				}
-				
-				h1::after {
-					content: "";
-					width: 120px;
-					height: 1px;
-					bottom:-38px;
-					left: 50%;
-					transform: translateX(-50%);
-	
-					background-color: $White;
-	
-					position: absolute;
+
+					&:after {
+						bottom: -36px;
+					}
 				}
 	
 				p {
@@ -498,7 +486,7 @@ h1 {
 		}
 
 		&__item:last-child {
-			padding: 100px 0;
+			padding: 110px 0;
 
 			
 		}
@@ -508,7 +496,7 @@ h1 {
 // ------------------------
 
 
-// Top section
+// Catalog
 
 .catalog {
 	padding: 120px 0 150px;
@@ -516,24 +504,7 @@ h1 {
 	.container {
 
 		h1 {
-			position: relative;
-
-			text-align: center;
-
 			margin-bottom: 120px;
-		}
-
-		h1::after {
-			content: "";
-			width: 120px;
-			height: 1px;
-			bottom:-50px;
-			left: 50%;
-			transform: translateX(-50%);
-
-			background-color: $White;
-
-			position: absolute;
 		}
 
 		.watch-box-catalog {
@@ -550,6 +521,35 @@ h1 {
 	}
 
 
+}
+
+// ------------------------
+
+// Brands
+
+.brands {
+	background-color: $LigthBlack;
+	padding: 64px 0 80px;
+
+	h1 {
+		margin-bottom: 80px;
+	}
+
+	&-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__item {
+			background-image: url('../img/brand-logo.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+
+			width: 255px;
+			height: 94px;
+		}
+	}
 }
 
 // ------------------------

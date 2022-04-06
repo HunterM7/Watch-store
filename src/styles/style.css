@@ -112,6 +112,20 @@ h1 {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  position: absolute;
 }
 
 .header {
@@ -390,23 +404,7 @@ h1 {
 
 .new-collection-box__item {
   text-align: center;
-  padding: 93px 60px;
-}
-
-.new-collection-box__item h1 {
-  position: relative;
-}
-
-.new-collection-box__item h1::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  bottom: -50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #fff;
-  position: absolute;
+  padding: 93px 60px 46px;
 }
 
 .new-collection-box__item a {
@@ -547,20 +545,11 @@ h1 {
 }
 
 .collection-2018-box__item__info h1 {
-  position: relative;
   margin-bottom: 80px;
 }
 
-.collection-2018-box__item__info h1::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  bottom: -38px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #fff;
-  position: absolute;
+.collection-2018-box__item__info h1:after {
+  bottom: -36px;
 }
 
 .collection-2018-box__item__info p {
@@ -585,7 +574,7 @@ h1 {
 }
 
 .collection-2018-box__item:last-child {
-  padding: 100px 0;
+  padding: 110px 0;
 }
 
 .catalog {
@@ -593,21 +582,7 @@ h1 {
 }
 
 .catalog .container h1 {
-  position: relative;
-  text-align: center;
   margin-bottom: 120px;
-}
-
-.catalog .container h1::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  bottom: -50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #fff;
-  position: absolute;
 }
 
 .catalog .container .watch-box-catalog {
@@ -619,4 +594,34 @@ h1 {
 .catalog .container .watch-box-catalog__item {
   max-width: 260px;
   padding: 0 11px;
+}
+
+.brands {
+  background-color: #0f0f0f;
+  padding: 64px 0 80px;
+}
+
+.brands h1 {
+  margin-bottom: 80px;
+}
+
+.brands-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands-box__item {
+  background-image: url("../img/brand-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 255px;
+  height: 94px;
 }
