@@ -331,7 +331,7 @@ a.button:hover {
   transition: .2s ease;
 }
 
-.header .low-header nav .navigation__item:hover {
+.header .low-header nav .navigation__item a:hover {
   color: #fff;
   background-color: #1F1F1F;
 }
