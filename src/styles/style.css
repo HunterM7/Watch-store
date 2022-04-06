@@ -523,10 +523,17 @@ a.button:hover {
   margin-bottom: 30px;
   height: 325px;
   background-color: #191B1C;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
-.watch-box__item__preview img {
+.watch-box__item__preview__img {
   width: 100%;
+  height: 100%;
+  background-image: url("../img/watch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .watch-box__item__name {
@@ -547,6 +554,7 @@ a.button:hover {
 
 .watch-box__item:hover .watch-box__item__preview {
   padding: 22px 10px;
+  background-color: #232526;
 }
 
 .collection-2018 .container {
@@ -653,7 +661,6 @@ a.button:hover {
 
 footer .top-footer {
   padding: 80px 0 100px;
-  margin: 0 -15px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.55))), url("../img/bg-footer.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55)), url("../img/bg-footer.jpg");
   background-repeat: no-repeat;
@@ -697,10 +704,20 @@ footer .top-footer .tags {
 }
 
 footer .top-footer .tags__item {
-  padding: 13px 21px;
   margin: 0 10px 20px;
   color: #D0D0D0;
   background-color: #0f0f0f;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+footer .top-footer .tags__item:hover {
+  background-color: #1f1f1f;
+}
+
+footer .top-footer .tags__item a {
+  display: inline-block;
+  padding: 13px 21px;
 }
 
 footer .top-footer .top-footer__mailing {
@@ -727,6 +744,7 @@ footer .top-footer .top-footer__mailing form {
 }
 
 footer .top-footer .top-footer__mailing form input {
+  width: 100%;
   color: #fff;
   background-color: transparent;
   margin: 0 16px;
@@ -740,6 +758,12 @@ footer .top-footer .top-footer__mailing form button {
   text-transform: uppercase;
   color: #fff;
   background-color: #0f0f0f;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+footer .top-footer .top-footer__mailing form button:hover {
+  background-color: #1f1f1f;
 }
 
 footer .bottom-footer {
